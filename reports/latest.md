@@ -1,5 +1,5 @@
 # サイト自動点検レポート
-- **点検日時**: 2026-11-11 15:14 JST
+- **点検日時**: 2026-11-11 15:59 JST
 - **対象URL**: [https://affiliate-auto-site-1tk.pages.dev](https://affiliate-auto-site-1tk.pages.dev)
 - **総ページ数**: 17 ページ
 - **外部・広告リンク数**: 49 件
