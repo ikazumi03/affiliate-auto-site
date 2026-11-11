@@ -1,70 +1,30 @@
 name: Weekly Draft Article Pull Request
 
+# 安全修正: 未検証の固定本文による自動生成・PR作成は停止中。
+# 公式出典の検証と承認済み広告台帳を実装した別PRの承認後に再開する。
 on:
-  schedule:
-    # 毎週木曜日 09:00 JST (00:00 UTC)
-    - cron: '0 0 * * 4'
   workflow_dispatch:
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
 
 jobs:
-  draft:
+  readiness:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
-
+    timeout-minutes: 3
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
-          fetch-depth: 0
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
+          persist-credentials: false
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-
-      - name: Generate new article draft
+      - name: Draft readiness only (no article, commit, push or PR)
         run: |
           python ops/generate_draft.py
-          python ops/check_site.py --skip-external
-
-      - name: Check for generated files
-        id: git_status
-        run: |
-          git status --porcelain
-          if [ -z "$(git status --porcelain)" ]; then
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-            echo "作成対象の下書き記事がありません。"
-          else
-            echo "has_changes=true" >> $GITHUB_OUTPUT
-          fi
-
-      - name: Create branch and open Pull Request
-        if: steps.git_status.outputs.has_changes == 'true'
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          DATE_STR=$(date +'%Y-%m-%d')
-          BRANCH_NAME="draft/weekly-article-${DATE_STR}"
-          
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Actions (Kurashi Bot)"
-          
-          git checkout -b "${BRANCH_NAME}"
-          git add *.html sitemap.xml ops/topics.json reports/
-          git commit -m "Add new article draft for ${DATE_STR}"
-          git push -u origin "${BRANCH_NAME}"
-          
-          PR_TITLE="【記事ドラフト】週次新規比較ガイド作成 (${DATE_STR})"
-          PR_BODY_FILE="reports/latest_draft_pr.md"
-          
-          gh pr create \
-            --title "${PR_TITLE}" \
-            --body-file "${PR_BODY_FILE}" \
-            --base main \
-            --head "${BRANCH_NAME}"
-          
-          echo "Successfully created Pull Request for ${BRANCH_NAME}"
+          cat reports/draft_readiness.md >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: draft-readiness-${{ github.run_number }}
+          path: reports/draft_readiness.*
+          retention-days: 14
