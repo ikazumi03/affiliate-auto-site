@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "sim-comparison",
+    "category": "通信・ネット",
+    "title": "格安SIMはどう選ぶ？月額料金・通信速度・契約前のチェックポイント",
+    "description": "格安SIMやサブブランド（ahamo・povo・LINEMO等）を選ぶ際のデータ容量、通話オプション、事務手数料、解約ルールの比較基準を公式情報に基づき整理。",
+    "target_audience": "毎月のスマホ代を安くしたいが、どれを選べばいいか分からない人",
+    "keywords": [
+      "格安SIM 選び方",
+      "スマホ 料金 見直し",
+      "格安スマホ 比較 ポイント"
+    ],
+    "asp": "ドコモ・A8.net",
+    "status": "pending_draft",
+    "official_sources": [
+      {
+        "name": "総務省：携帯電話ポータルサイト",
+        "url": "https://www.soumu.go.jp/menu_seisaku/ictseisaku/keitai_portal/"
+      },
+      {
+        "name": "ahamo公式サイト（NTTドコモ）",
+        "url": "https://ahamo.com/"
+      }
+    ]
+  },
+  {
+    "slug": "air-purifier",
+    "category": "デジタル",
+    "title": "空気清浄機・加湿空気清浄機の選び方｜適用床面積とフィルター寿命の確認基準",
+    "description": "一人暮らしからリビング用まで、空気清浄機を選ぶ際の適用床面積、加湿機能の有無、フィルター交換費用、静音性のチェック項目を整理。",
+    "target_audience": "花粉や乾燥対策で空気清浄機を検討しているが、維持費や性能差が気になる人",
+    "keywords": [
+      "空気清浄機 選び方",
+      "加湿空気清浄機 比較",
+      "家電 維持費 チェック"
+    ],
+    "asp": "A8.net",
+    "status": "planned",
+    "official_sources": [
+      {
+        "name": "一般社団法人日本電機工業会（JEMA）：空気清浄機規格",
+        "url": "https://www.jema-net.or.jp/"
+      }
+    ]
+  },
+  {
+    "slug": "cooking-subscription",
+    "category": "暮らし",
+    "title": "ミールキット・食材宅配の選び方｜1食あたりの価格と受取・スキップ条件",
+    "description": "自炊の手間を減らしたい人向けに、ミールキットや食材宅配サービスの料金体系、調理時間、冷凍/冷蔵の違い、スキップ・休止のしやすさを比較整理。",
+    "target_audience": "忙しい平日におかず作りを効率化したい単身・共働き世帯",
+    "keywords": [
+      "ミールキット 選び方",
+      "食材宅配 比較",
+      "つくりおき 料金"
+    ],
+    "asp": "A8.net",
+    "status": "planned",
+    "official_sources": [
+      {
+        "name": "消費者庁：通信販売・定期購入の確認ポイント",
+        "url": "https://www.caa.go.jp/"
+      }
+    ]
+  }
+]

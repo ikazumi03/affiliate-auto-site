@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-# 公開URLを決めたら sitemap.xml のURLを更新してください
+
+Sitemap: https://affiliate-auto-site-1tk.pages.dev/sitemap.xml
