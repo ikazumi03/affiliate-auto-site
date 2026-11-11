@@ -1,14 +1,15 @@
 {
-  "checked_at": "2026-10-30 07:53 JST",
-  "site_url": null,
+  "checked_at": "2026-11-11 15:14 JST",
+  "site_url": "https://affiliate-auto-site-1tk.pages.dev",
   "summary": {
-    "pages": 11,
-    "external_links": 0,
+    "pages": 17,
+    "external_links": 49,
     "affiliate_slots_configured": 0
   },
   "issues": [],
+  "seo_notices": [],
   "notes": [
-    "SITE_URLが未設定のため公開サイトの応答チェックは省略",
-    "広告URLが未設定です。提携承認後、許可されたリンク形式で設定してください。"
+    "affiliate-links.jsの共通広告URLが未設定です（承認後に正規リンクを設定可能）。",
+    "外部リンク応答確認推奨 (HTTP None): https://ahamo.com/"
   ]
 }
