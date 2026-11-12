@@ -1,0 +1,11 @@
+{
+  "id": "onsuku-plan-refresh",
+  "name": "オンスク既存記事の公式料金・機能を再確認する準備",
+  "mode": "update_existing",
+  "article_path": "onsuku.html",
+  "advertiser_id": "onsuku",
+  "source_ids": ["onsuku-pricing", "onsuku-comparison"],
+  "generation_allowed": false,
+  "human_review_required": true,
+  "note": "既存記事を書き換える実行許可ではありません。今回の準備版は取得とレポートのみです。"
+}

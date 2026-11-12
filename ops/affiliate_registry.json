@@ -1,0 +1,153 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-11-12",
+  "generation_state": {
+    "enabled": false,
+    "llm_provider_configured": false,
+    "cost_approved": false,
+    "weekly_limit": 1,
+    "publication_mode": "human_approved_pull_request"
+  },
+  "advertisers": [
+    {
+      "id": "onsuku",
+      "name": "オンスク.JP",
+      "asp": "A8.net",
+      "approval": {
+        "status": "approved",
+        "confirmed_on": "2026-11-11",
+        "verification_method": "owner_report_and_screen",
+        "scope": "existing_site"
+      },
+      "conditions": {
+        "status": "owner_reviewed",
+        "confirmed_on": "2026-11-11",
+        "review_scope": "onsuku-pr4-specific-revision",
+        "private_details_stored": false
+      },
+      "automated_use": "preparation_only",
+      "assets": [
+        {
+          "article_path": "onsuku.html",
+          "ad_fingerprint": {
+            "sha256": "cf4d6e41c58e8f4e0600bcd8bd08878e3fe0db087950b3bc9316568d3e50439e",
+            "fragment_count": 3
+          }
+        }
+      ],
+      "notes": "既存サイトの提携承認済みという運営者申告。将来の文章・素材変更の無条件承認ではありません。"
+    },
+    {
+      "id": "pc-wrap",
+      "name": "PC WRAP",
+      "asp": "A8.net",
+      "approval": {
+        "status": "approved",
+        "confirmed_on": "2026-11-11",
+        "verification_method": "owner_report",
+        "scope": "existing_site"
+      },
+      "conditions": {
+        "status": "pending_recording",
+        "confirmed_on": null,
+        "review_scope": null,
+        "private_details_stored": false
+      },
+      "automated_use": "blocked_pending_conditions",
+      "assets": [
+        {
+          "article_path": "pc-wrap.html",
+          "ad_fingerprint": {
+            "sha256": "752cb5112fb592d287ef742689a29be56842fca2efe66a6419f8885a97d219c1",
+            "fragment_count": 3
+          }
+        }
+      ],
+      "notes": "既存サイトの提携承認済みという運営者申告。将来の文章・素材変更の無条件承認ではありません。"
+    },
+    {
+      "id": "chef-tsukurioki",
+      "name": "シェフの無添つくりおき",
+      "asp": "A8.net",
+      "approval": {
+        "status": "approved",
+        "confirmed_on": "2026-11-11",
+        "verification_method": "owner_report",
+        "scope": "existing_site"
+      },
+      "conditions": {
+        "status": "pending_recording",
+        "confirmed_on": null,
+        "review_scope": null,
+        "private_details_stored": false
+      },
+      "automated_use": "blocked_pending_conditions",
+      "assets": [
+        {
+          "article_path": "chef-tsukurioki.html",
+          "ad_fingerprint": {
+            "sha256": "44a14b618b3d5cf125bc58181c2001f29c04596b107d62e4cf414a1ccb080968",
+            "fragment_count": 4
+          }
+        }
+      ],
+      "notes": "既存サイトの提携承認済みという運営者申告。将来の文章・素材変更の無条件承認ではありません。"
+    },
+    {
+      "id": "switchbot",
+      "name": "SwitchBot",
+      "asp": "A8.net",
+      "approval": {
+        "status": "approved",
+        "confirmed_on": "2026-11-11",
+        "verification_method": "owner_report",
+        "scope": "existing_site"
+      },
+      "conditions": {
+        "status": "pending_recording",
+        "confirmed_on": null,
+        "review_scope": null,
+        "private_details_stored": false
+      },
+      "automated_use": "blocked_pending_conditions",
+      "assets": [
+        {
+          "article_path": "switchbot.html",
+          "ad_fingerprint": {
+            "sha256": "247f8453f548756b55ac996e5d7bde5b2a41837b0879706321599ae70a6e3d0d",
+            "fragment_count": 6
+          }
+        }
+      ],
+      "notes": "既存サイトの提携承認済みという運営者申告。将来の文章・素材変更の無条件承認ではありません。"
+    },
+    {
+      "id": "expressvpn",
+      "name": "ExpressVPN",
+      "asp": "A8.net",
+      "approval": {
+        "status": "approved",
+        "confirmed_on": "2026-11-11",
+        "verification_method": "owner_report",
+        "scope": "existing_site"
+      },
+      "conditions": {
+        "status": "pending_recording",
+        "confirmed_on": null,
+        "review_scope": null,
+        "private_details_stored": false
+      },
+      "automated_use": "blocked_pending_conditions",
+      "assets": [
+        {
+          "article_path": "expressvpn.html",
+          "ad_fingerprint": {
+            "sha256": "01da7a8d7f9bd514d60dec8f46422f51d58557ad40178db002cd15c3ac1c39f9",
+            "fragment_count": 2
+          }
+        }
+      ],
+      "notes": "既存サイトの提携承認済みという運営者申告。将来の文章・素材変更の無条件承認ではありません。"
+    }
+  ]
+}
