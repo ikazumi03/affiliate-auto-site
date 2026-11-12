@@ -1,0 +1,47 @@
+name: Generation Preparation (No Article or Publish)
+# 手動の準備確認専用。本文生成・定期実行・PR作成・本番書込みなし。
+on:
+  workflow_dispatch:
+    inputs:
+      fetch_sources:
+        description: '公式ページの取得も行う（記事は生成しない）'
+        required: true
+        type: boolean
+        default: false
+permissions:
+  contents: read
+jobs:
+  preparation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate registry and optionally retrieve official sources
+        env:
+          FETCH_SOURCES: ${{ inputs.fetch_sources }}
+        shell: bash
+        run: |
+          args=(--output "$RUNNER_TEMP/kurashi-source-preparation")
+          if [ "$FETCH_SOURCES" = "true" ]; then
+            args+=(--fetch)
+          fi
+          python ops/prepare_generation.py "${args[@]}"
+      - name: Add preparation report to summary
+        if: always()
+        shell: bash
+        run: |
+          if [ -f "$RUNNER_TEMP/kurashi-source-preparation/preparation.md" ]; then
+            cat "$RUNNER_TEMP/kurashi-source-preparation/preparation.md" >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: source-preparation-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/kurashi-source-preparation/
+          retention-days: 14
+          if-no-files-found: warn
