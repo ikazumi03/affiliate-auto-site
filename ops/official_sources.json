@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "onsuku-pricing",
+      "advertiser_id": "onsuku",
+      "name": "オンスク.JP公式：有料プランについて",
+      "url": "https://onsuku.jp/plan_guidance",
+      "purpose": "Web版月額料金・初期費用・プラン種別の根拠候補",
+      "max_age_hours": 24,
+      "required": true,
+      "claim_review_required": true
+    },
+    {
+      "id": "onsuku-comparison",
+      "advertiser_id": "onsuku",
+      "name": "オンスク.JP公式：月額プランの機能比較",
+      "url": "https://onsuku.jp/comparison",
+      "purpose": "対象講座とプラン別機能の根拠候補。支払方法のFAQには記載差があるため別途確認",
+      "max_age_hours": 168,
+      "required": true,
+      "claim_review_required": true
+    }
+  ]
+}
