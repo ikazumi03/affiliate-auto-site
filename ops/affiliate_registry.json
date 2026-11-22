@@ -48,9 +48,9 @@
         "scope": "existing_site"
       },
       "conditions": {
-        "status": "pending_recording",
-        "confirmed_on": null,
-        "review_scope": null,
+        "status": "owner_reviewed",
+        "confirmed_on": "2026-11-20",
+        "review_scope": "A8プログラム詳細（提携情報の表示・詳細）の掲載条件・成果条件・否認条件を確認（2026-11-20）",
         "private_details_stored": false
       },
       "automated_use": "blocked_pending_conditions",
@@ -76,9 +76,9 @@
         "scope": "existing_site"
       },
       "conditions": {
-        "status": "pending_recording",
-        "confirmed_on": null,
-        "review_scope": null,
+        "status": "owner_reviewed",
+        "confirmed_on": "2026-11-20",
+        "review_scope": "A8プログラム詳細（提携情報の表示・詳細）の掲載条件・成果条件・否認条件を確認（2026-11-20）",
         "private_details_stored": false
       },
       "automated_use": "blocked_pending_conditions",
@@ -104,9 +104,9 @@
         "scope": "existing_site"
       },
       "conditions": {
-        "status": "pending_recording",
-        "confirmed_on": null,
-        "review_scope": null,
+        "status": "owner_reviewed",
+        "confirmed_on": "2026-11-20",
+        "review_scope": "A8プログラム詳細（提携情報の表示・詳細）の掲載条件・成果条件・否認条件を確認（2026-11-20）",
         "private_details_stored": false
       },
       "automated_use": "blocked_pending_conditions",
@@ -132,9 +132,9 @@
         "scope": "existing_site"
       },
       "conditions": {
-        "status": "pending_recording",
-        "confirmed_on": null,
-        "review_scope": null,
+        "status": "owner_reviewed",
+        "confirmed_on": "2026-11-20",
+        "review_scope": "A8プログラム詳細（提携情報の表示・詳細）の掲載条件・成果条件・否認条件を確認（2026-11-20）",
         "private_details_stored": false
       },
       "automated_use": "blocked_pending_conditions",
